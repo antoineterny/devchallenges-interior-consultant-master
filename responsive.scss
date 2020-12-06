@@ -1,0 +1,93 @@
+@media screen and (min-width: 880px) {
+	body {
+		padding: 42px 77px;
+		max-width: 1440px;
+		margin: auto;
+	}
+
+	nav {
+		margin-bottom: 170px;
+		.mobile-nav {
+			display: none;
+		}
+		.desktop-nav {
+			display: flex;
+		}
+		li a {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			text-decoration: none;
+			color: white;
+			margin-left: 86px;
+		}
+	}
+
+	header {
+    flex-shrink: 0;
+    margin-right: 2em;
+	}
+
+	section {
+		max-width: 750px;
+	}
+
+
+	main {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 217px;
+	}
+
+	footer {
+		border: none;
+		padding-bottom: 46px;
+	}
+}
+
+
+
+@media screen and (min-width: 1080px) {
+	header {
+		h1 {
+			font-size: 48px;
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 24px;
+			line-height: 29px;
+			max-width: 410px;
+		}
+		a {
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 48px;
+		}
+  }
+  .card {
+		width: 410px;
+		right: 32px;
+		h3 {
+			font-size: 24px;
+			line-height: 31px;
+		}
+	}
+	.card-header {
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+	.card-person {
+		h6 {
+			font-size: 14px;
+			line-height: 17px;
+		}
+		p {
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+
+}

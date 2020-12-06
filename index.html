@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,
   maximum-scale=5"
-    />
+		/>
 
-    <link rel="icon" href="devchallenges.png" />
+		<link rel="icon" href="devchallenges.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@300;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="responsive.css" />
+		<title>Devchallenges</title>
+	</head>
 
-    <title>Devchallenges</title>
+	<body>
+		<nav>
+			<a class="logo" href="#">This Interior</a>
+			<ul class="desktop-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Collection</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<i class="material-icons mobile-nav">menu</i>
+		</nav>
 
-  </head>
-  <body>
-    <nav>
-      <div class="logo">This Interior</div>
-      <ul>
-        <li>Home</li>
-        <li>Collection</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <main>
-      <header>
-        <h1>Modern interor</h1>
-        <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-        <a href="#">Read more</a>
-      </header>
-      <section>
-        <img src="photo1.png" alt="">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-picture">
-              <img src="photo2.png" alt="">
-            </div>
-            <div class="card-person">
-              <h6>Aliza Webber</h6>
-              <p>Interior designer</p>
-            </div>
-          </div>
-          <h3>Designed in 2020 by Aliza Webber</h3>
-        </div>
-      </section>
-      <footer>
-        Antoine Terny @ DevChallenges.io
-      </footer>
-    </main>
-  </body>
+		<main>
+			<header>
+				<h1>Modern interior</h1>
+				<p>
+					A full-Service residential & commercial interior design and staging company offering professional
+					organizing & <br />eco-services.
+				</p>
+				<a href="#">Read more <i class="material-icons">arrow_right_alt</i></a>
+			</header>
+
+			<section>
+				<img src="photo1.png" alt="" />
+
+				<div class="card">
+					<div class="card-header">
+						<div class="card-picture">
+							<img src="photo2.png" alt="" />
+						</div>
+						<div class="card-person">
+							<h6>Aliza Webber</h6>
+							<p>Interior designer</p>
+						</div>
+					</div>
+					<h3>Designed in 2020 by <br />Aliza Webber</h3>
+				</div>
+			</section>
+		</main>
+
+		<footer>Antoine Terny @ DevChallenges.io</footer>
+
+		<div class="mobile-menu hidden">
+			<i class="material-icons">close</i>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Collection</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</body>
+
+	<script>
+		const hamburger = document.querySelector('nav i');
+		const cross = document.querySelector('.mobile-menu i');
+		const mobileMenu = document.querySelector('.mobile-menu');
+
+		hamburger.onclick = () => mobileMenu.classList.toggle('hidden');
+		cross.onclick = () => mobileMenu.classList.toggle('hidden');
+		document.querySelectorAll('.mobile-menu a').forEach(link => {
+			link.onclick = () => mobileMenu.classList.toggle('hidden');
+		});
+	</script>
 </html>

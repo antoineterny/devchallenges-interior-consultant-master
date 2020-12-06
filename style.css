@@ -1,0 +1,237 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #181719;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 17px 12px;
+  height: 100vh;
+  position: relative;
+  min-width: 350px;
+  max-width: 450px;
+  margin: auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+}
+
+nav .desktop-nav {
+  display: none;
+}
+
+nav .logo {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 103px;
+  height: 31px;
+  text-decoration: none;
+  color: white;
+}
+
+nav .material-icons {
+  font-size: 36px;
+}
+
+nav .material-icons:hover {
+  cursor: pointer;
+}
+
+header h1 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 25px;
+}
+
+header p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 250px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 15px 37px 0;
+}
+
+header a .material-icons {
+  margin-left: 0.75em;
+  font-size: 20px;
+}
+
+section {
+  position: relative;
+}
+
+section img {
+  width: 100%;
+}
+
+.card {
+  background: #181719;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  bottom: -85px;
+  right: 10px;
+}
+
+.card h3 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 230px;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.card-header img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.card-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-person h6 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card-person p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+main {
+  margin-bottom: 137px;
+}
+
+footer {
+  width: 75%;
+  margin: auto;
+  border-top: 1px solid #a9a9a9;
+  padding-top: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: #181719;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 3em;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-menu .active,
+.mobile-menu a:hover {
+  font-weight: 700;
+}
+
+.mobile-menu i {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
