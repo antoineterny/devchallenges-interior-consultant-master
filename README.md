@@ -11,10 +11,10 @@
     <a href="https://devchallenges-interior-consultant-master.vercel.app/">
       Demo
     </a>
-    <!-- <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <span> | </span>
+    <a href="https://github.com/antoineterny/devchallenges-interior-consultant-master">
       Solution
-    </a> -->
+    </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
       Challenge
